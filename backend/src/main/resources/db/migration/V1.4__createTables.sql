@@ -115,3 +115,15 @@ create table if not exists sdb.takes(
                                              constraint student_fkey foreign key (studentID) references sdb.person(id),
                                              constraint section_fkey foreign key (sectionID) references sdb.section(id)
 );
+
+
+create table if not exists sdb.announcement(
+                                            id serial,
+                                            sectionID serial,
+                                            dateAdded date,
+                                            timeAdded varchar(20),
+                                            content text,
+
+                                            primary key (id),
+                                            constraint sec_fkey foreign key (sectionID) references sdb.section(id)
+);
