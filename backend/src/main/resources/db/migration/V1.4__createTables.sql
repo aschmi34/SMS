@@ -127,3 +127,16 @@ create table if not exists sdb.announcement(
                                             primary key (id),
                                             constraint sec_fkey foreign key (sectionID) references sdb.section(id)
 );
+
+
+create table if not exists sdb.payment(
+                                            id serial,
+                                            studentID serial,
+                                            paymentDate date,
+                                            paymentAmount integer,
+                                            previousBalance integer,
+
+                                            primary key (id),
+                                            constraint stud_fkey foreign key (studentID) references sdb.person(id)
+);
+

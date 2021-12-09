@@ -106,7 +106,7 @@ null, '2017-04-23', 55000, null, 'fla$H683');
 -- 22 Tim Drake
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Tim', 'Drake', 'S', 'tdrake1', '261 Uptown Parkway', 'Seattle', '54357', '2016-02-20', '(474)252-9302', 'timmy.d@gmail.com',
-120, null, null, null, 'greAtGat$by5');
+0, null, null, null, 'greAtGat$by5');
 
 -- 23 Virgil Hawkins
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
