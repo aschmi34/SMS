@@ -31,8 +31,8 @@ spring.flyway.enabled: false
 ##########################################################
 app.datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/app1_db
+    url: jdbc:postgresql://localhost:5432/sdb
     username: app1_user
     password: secret
-    schema: app1_db
+    schema: sdb
     maxPoolSize: 10
