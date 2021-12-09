@@ -101,7 +101,7 @@ create table if not exists sdb.section(
                                                primary key (id),
                                                constraint course_fkey foreign key (courseID) references sdb.course(id),
                                                constraint courseT_fkey foreign key (teacherID) references sdb.person(id),
-                                               constraint location_fkey foreign key (teacherID) references sdb.location(id)
+                                               constraint location_fkey foreign key (locationID) references sdb.location(id)
 );
 
 

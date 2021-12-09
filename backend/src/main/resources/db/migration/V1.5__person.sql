@@ -66,17 +66,17 @@ null, '2021-07-25', 62000, 'ballet', 'flyHiGH535');
 -- 14 Dinah Lance
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Dinah', 'Lance', 'S', 'dlance1', '56 Frontire Drive', 'Los Angeles', '25763', '2004-05-12', '(591)592-1498', 'dlance@scao.com',
-80, null, null, null, ‘canaryCry5’);
+80, null, null, null, 'canaryCry5');
 
 -- 15 Peter Parker
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Peter', 'Parker', 'S', 'pparke2', '81 Douglas Parkway', 'Miami', '47453', '2010-12-02', '(363)256-0919', 'spideyboy@queens.com',
-40, null, null, null, ‘spideySenCe23’);
+40, null, null, null, 'spideySenCe23');
 
 -- 16 Anthony Stark
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Anthony', 'Stark', 'S', 'astark1', '732 Gateway Avenue', 'Orlando', '47453', '2008-04-02', '(633)522-9094', 'astark@starkindustries.com',
-160, null, null, null, ‘ironMAN231’);
+160, null, null, null, 'ironMAN231');
 
 -- 17 Bruce Banner
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
@@ -91,12 +91,12 @@ values ('Thor', 'Odinson', 'S', 'todins1', '82952 Forest Drive', 'Las Vegas', '6
 -- 19 Susan Storm
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Susan', 'Storm', 'S', 'sstorm1', '424 Helper Ave', 'New York', '24255', '2011-05-13', '(134)434-9043', 'sstorm@fanfour.com',
-100, null, null, null, ‘inVisible4’);
+100, null, null, null, 'inVisible4');
 
 -- 20 Ororo Monroe
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
 values ('Ororo', 'Monroe', 'S', 'omonro1', '842 Kelsey St', 'Lima', '89741', '2018-06-05', '(254)643-2350', 'omonroe@gmail.com',
-400, null, null, null, ‘stoRMbrEaker2’);
+400, null, null, null, 'stoRMbrEaker2');
 
 -- 21 Jay Garrick
 insert into sdb.person(fname, lname, des, username, street, city, zipcode, dateOfBirth, phoneNumber, email, balance, startDate, salary, specialty, password)
