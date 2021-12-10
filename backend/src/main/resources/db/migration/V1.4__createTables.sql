@@ -1,3 +1,11 @@
+create table if not exists sdb.designationLK(
+                                              id serial,
+                                              symbol varchar(1),
+                                              name varchar(45),
+
+                                              primary key (id)
+);
+
 create table if not exists sdb.school(
                                               name varchar(100),
                                               id serial,
