@@ -48,4 +48,27 @@ public class smsService {
         logger.debug("sql finished");
         return listOfPeople;
     }
+
+    public List<getDesignationDTO> getDesignation() {
+        // Construct the SQL to get all person info (sorted by designationLK.id ascending)
+        String sql =
+                "select d.id as id, d.symbol as symbol, d.name as name\n" +
+                        "from sdb.designationLK d;";
+
+        // Use the rowMapper to convert the results into a list of GetPersonDTO objects
+        //      Maps the "as" something to the matching name in the DTO
+        //      Example: maps "p.fname as fname"(SQL) to the "private String title"(DTO)
+        BeanPropertyRowMapper<getDesignationDTO> rowMapper = new BeanPropertyRowMapper<>(getDesignationDTO.class);
+
+        // Create a JdbcTemplate object
+        JdbcTemplate jt = new JdbcTemplate(this.dataSource);
+
+        // Get a connection from the connection pool
+        // Run the SQL
+        // Convert the results into a list of GetAllMediaDTO objects
+        // Return the connection to the connection pool
+        List<getDesignationDTO> listOfDesignations = jt.query(sql, rowMapper);
+        logger.debug("sql finished");
+        return listOfDesignations;
+    }
 }
