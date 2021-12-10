@@ -71,4 +71,27 @@ public class smsService {
         logger.debug("sql finished");
         return listOfDesignations;
     }
+
+    public List<getSchoolDTO> getAllSchools() {
+        // Construct the SQL to get all school info (sorted by school.id ascending)
+        String sql =
+                "select s.name as name, s.id as id, s.phoneNumber as phoneNumber\n" +
+                        "from sdb.school s;";
+
+        // Use the rowMapper to convert the results into a list of GetSchoolDTO objects
+        //      Maps the "as" something to the matching name in the DTO
+        //      Example: maps "s.name as name"(SQL) to the "private String name"(DTO)
+        BeanPropertyRowMapper<getSchoolDTO> rowMapper = new BeanPropertyRowMapper<>(getSchoolDTO.class);
+
+        // Create a JdbcTemplate object
+        JdbcTemplate jt = new JdbcTemplate(this.dataSource);
+
+        // Get a connection from the connection pool
+        // Run the SQL
+        // Convert the results into a list of GetSchoolDTO objects
+        // Return the connection to the connection pool
+        List<getSchoolDTO> listOfSchools = jt.query(sql, rowMapper);
+        logger.debug("sql finished");
+        return listOfSchools;
+    }
 }
