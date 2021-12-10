@@ -34,6 +34,7 @@ import { ErrorDialogComponent } from './errorHandler/error-dialog/error-dialog.c
 import {ErrorInterceptor} from "./errorHandler/error.interceptor";
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
 import {CanDeactivateGuard} from "./guards/can-deactivate.guard";
+import { LoginComponent } from './login/login.component';
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
     UserNavbarComponent,
     AddReport2Component,
     ErrorDialogComponent,
-    EditReportComponent
+    EditReportComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

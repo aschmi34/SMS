@@ -1,4 +1,4 @@
-package models;
+package com.lessons.models;
 
 import java.util.Date;
 
@@ -19,7 +19,7 @@ public class getSectionDTO {
         return secNo;
     }
 
-    public void setSecNo(String ecNo) {
+    public void setSecNo(String secNo) {
         this.secNo = secNo;
     }
 

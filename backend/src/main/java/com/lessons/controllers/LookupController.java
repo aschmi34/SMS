@@ -21,8 +21,6 @@ public class LookupController {
 
     @Resource
     private LookupService lookupService;
-
-
     /**
      * Lookup REST endpoints
      *   GET  /api/lookups/{lookupType}/{orderBy}

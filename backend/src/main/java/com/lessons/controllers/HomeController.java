@@ -34,7 +34,6 @@ public class HomeController {
         return "forward:/index.html";
     }
 
-
     /*************************************************************************
      * REST endpoint /api/time
      *

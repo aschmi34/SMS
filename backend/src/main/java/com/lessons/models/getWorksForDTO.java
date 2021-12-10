@@ -1,10 +1,10 @@
-package models;
+package com.lessons.models;
 
-public class getTeachesAtDTO {
+public class getWorksForDTO {
 
     private int id;
     private int schoolID;
-    private int teacherID;
+    private int accountantID;
 
     public int getId() {
         return id;
@@ -22,11 +22,11 @@ public class getTeachesAtDTO {
         this.schoolID = schoolID;
     }
 
-    public int getTeacherID() {
-        return teacherID;
+    public int getAccountantID() {
+        return accountantID;
     }
 
-    public void setTeacherID(int teacherID) {
-        this.teacherID = teacherID;
+    public void setAccountantID(int accountantID) {
+        this.accountantID = accountantID;
     }
 }

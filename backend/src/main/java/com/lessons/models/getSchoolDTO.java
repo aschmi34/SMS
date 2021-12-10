@@ -1,4 +1,4 @@
-package models;
+package com.lessons.models;
 
 public class getSchoolDTO {
 
