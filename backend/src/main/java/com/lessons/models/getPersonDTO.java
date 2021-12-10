@@ -19,6 +19,7 @@ public class getPersonDTO {
     private Date startDate;
     private int salary;
     private String specialty;
+    private String password;
 
     public String getFname() {
         return fname;
@@ -138,5 +139,13 @@ public class getPersonDTO {
 
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

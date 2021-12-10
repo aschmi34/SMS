@@ -55,8 +55,8 @@ create table if not exists sdb.person(
                                               startDate date,
                                               salary integer,
                                               specialty varchar(50),
-
                                               password varchar(50),
+
                                               primary key (id)
 );
 
