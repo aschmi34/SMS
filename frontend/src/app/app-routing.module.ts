@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {StudentProfileComponent} from "./student-profile/student-profile.component";
 
 
-const routes: Routes = [{
-  path: 'student-profile ',
-  component: StudentProfileComponent
-}
+
+const routes: Routes = [
+
 ];
 
 @NgModule({

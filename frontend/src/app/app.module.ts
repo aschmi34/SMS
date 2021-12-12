@@ -35,7 +35,7 @@ import {ErrorInterceptor} from "./errorHandler/error.interceptor";
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
 import {CanDeactivateGuard} from "./guards/can-deactivate.guard";
 import { LoginComponent } from './login/login.component';
-import { StudentProfileComponent } from './student-profile/student-profile.component';
+import { SProfileComponent } from './S-profile/S-profile.component';
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
@@ -46,7 +46,8 @@ const appRoutes: Routes = [
   { path: 'page/chart1',       component: Chart1Component },
   { path: 'page/chart2',       component: Chart2Component },
   { path: '',                  component: WelcomeComponent},
-  { path: '**',                component: NotFoundComponent}
+  { path: '**',                component: NotFoundComponent},
+  { path: 'page/S-profile',    component: SProfileComponent}
 ];
 
 
@@ -66,7 +67,7 @@ const appRoutes: Routes = [
     ErrorDialogComponent,
     EditReportComponent,
     LoginComponent,
-    StudentProfileComponent
+    SProfileComponent
   ],
   imports: [
     BrowserModule,
