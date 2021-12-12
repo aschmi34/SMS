@@ -1,8 +1,9 @@
 .navbar {
-  background: #364150;
-  color: white;
+  background: #C4C4C4;
+  color: black;
   height: 100%;
   overflow: hidden;
+  width: 256px;
 }
 
 
