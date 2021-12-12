@@ -1,12 +1,19 @@
 package com.lessons.models;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+//@Table(name = "person")
 public class getPersonDTO {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
+    private long id;
 
     private String fname;
     private String lname;
-    private int id;
     private String des;
     private String username;
     private String street;
@@ -37,9 +44,9 @@ public class getPersonDTO {
         this.lname = lname;
     }
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
     public void setId(int id) {
         this.id = id;
