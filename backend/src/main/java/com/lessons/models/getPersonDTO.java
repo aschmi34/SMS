@@ -15,7 +15,6 @@ public class getPersonDTO {
     private String fname;
     private String lname;
     private String des;
-    private String username;
     private String street;
     private String city;
     private String zipcode;
@@ -26,7 +25,15 @@ public class getPersonDTO {
     private Date startDate;
     private int salary;
     private String specialty;
+
+    //Login & Security
+    private String username;
     private String password;
+    private boolean disabled;
+    private boolean accountExpired;
+    private boolean accountLocked;
+
+
 
     public String getFname() {
         return fname;
@@ -44,28 +51,12 @@ public class getPersonDTO {
         this.lname = lname;
     }
 
-//    public int getId() {
-//        return id;
-//    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getDes() {
         return des;
     }
 
     public void setDes(String des) {
         this.des = des;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getStreet() {
@@ -148,11 +139,43 @@ public class getPersonDTO {
         this.specialty = specialty;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isDisabled() {
+        return disabled;
+    }
+
+    public void setDisabled(boolean disabled) {
+        this.disabled = disabled;
+    }
+
+    public boolean isAccountExpired() {
+        return accountExpired;
+    }
+
+    public void setAccountExpired(boolean accountExpired) {
+        this.accountExpired = accountExpired;
+    }
+
+    public boolean isAccountLocked() {
+        return accountLocked;
+    }
+
+    public void setAccountLocked(boolean accountLocked) {
+        this.accountLocked = accountLocked;
     }
 }

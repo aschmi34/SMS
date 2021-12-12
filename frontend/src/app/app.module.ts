@@ -36,6 +36,8 @@ import { EditReportComponent } from './reports/edit-report/edit-report.component
 import {CanDeactivateGuard} from "./guards/can-deactivate.guard";
 import { LoginComponent } from './login/login.component';
 import { MCreateComponent } from './admin/m_create/m-create.component';
+import { CompNameComponent } from './admin/comp-name/comp-name.component';
+import { MViewComponent } from './admin/m-view/m-view.component';
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
@@ -66,7 +68,9 @@ const appRoutes: Routes = [
     ErrorDialogComponent,
     EditReportComponent,
     LoginComponent,
-    MCreateComponent
+    MCreateComponent,
+    CompNameComponent,
+    MViewComponent
   ],
   imports: [
     BrowserModule,
