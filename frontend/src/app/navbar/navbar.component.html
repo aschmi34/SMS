@@ -5,12 +5,23 @@
     <mat-list-item class="navItem" [routerLink]="'m-class/ClassRoster'" routerLinkActive="active">
       <div class='navHeader clickable'  (click)="toggleNavGroup(1)">
         <i class="fa fa-file-alt navHeaderIcon"></i>
-        <span class="navHeaderTitle">Class Roster</span>
+        <span class="navHeaderTitle">Lets Start</span>
+      </div>
+    </mat-list-item>
+
+    <!--    &lt;!&ndash; Menu Group 1 Items &ndash;&gt;-->
+    <mat-list-item class="navItem" [routerLink]="'courseCatalog'" routerLinkActive="active">
+      <a title="Student Profile">Course Catalog</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'courseCatalog'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
       </div>
     </mat-list-item>
 
 <!--    &lt;!&ndash; Menu Group 1 Items &ndash;&gt;-->
-    <mat-list-item class="navItem" [routerLink]="'m-dash/ClassRoster'" routerLinkActive="active">
+    <mat-list-item class="navItem" [routerLink]="'m-dash/classRoster'" routerLinkActive="active">
       <a title="Student Profile">Class Roster</a>
       <div fxFlex fxLayoutAlign="end end">
         <a [routerLink]="'m-dash/ClassRoster'" target="_blank">
@@ -31,7 +42,7 @@ window"></i>
     </mat-list-item>
 
     <mat-list-item class="navItem" [routerLink]="'m-dash/Manage'" routerLinkActive="active">
-      <a title="Student Profile">Managee</a>
+      <a title="Student Profile">Manage</a>
       <div fxFlex fxLayoutAlign="end end">
         <a [routerLink]="'m-dash/Manage'" target="_blank">
           <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
@@ -50,21 +61,12 @@ window"></i>
       </div>
     </mat-list-item>
 
-    <mat-list-item class="navItem" [routerLink]="'logout'" routerLinkActive="active">
-      <a title="Student Profile">Log Out</a>
-      <div fxFlex fxLayoutAlign="end end">
-        <a [routerLink]="'Logout'" target="_blank">
-          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
-window"></i>
-        </a>
-      </div>
-    </mat-list-item>
 
-    <!-- Menu Group 2 -->
-    <div class='navHeader clickable'   (click)="toggleNavGroup(2)">
-      <i class="fa fa-file-alt navHeaderIcon"></i>
-      <span class="navHeaderTitle">Analytics</span>
-    </div>
+<!--    &lt;!&ndash; Menu Group 2 &ndash;&gt;-->
+<!--    <div class='navHeader clickable'   (click)="toggleNavGroup(2)">-->
+<!--      <i class="fa fa-file-alt navHeaderIcon"></i>-->
+<!--      <span class="navHeaderTitle">Analytics</span>-->
+<!--    </div>-->
 
 <!--    &lt;!&ndash; Menu Group 2 Items &ndash;&gt;-->
 <!--    <div class='navGroup' [ngClass]="{'navGroupClosed': analyticsGroupClosed == true}">-->

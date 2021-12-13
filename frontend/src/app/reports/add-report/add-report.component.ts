@@ -4,7 +4,7 @@ import {NgForm} from "@angular/forms";
 
 export class Report {
   name: string | null;
-  priority: number | null;
+  role: number | null;
   source: number | null;
   authors: string | null;
   start_date: Date | null;
@@ -29,7 +29,7 @@ export class AddReportComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.report = new Report();
     this.report.name = null;
-    this.report.priority = null;
+    this.report.role = null;
     this.report.source = null;
     this.report.authors = null;
     this.report.start_date = this.getFirstDayOfPreviousMonth();
