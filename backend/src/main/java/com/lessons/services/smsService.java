@@ -310,4 +310,29 @@ public class smsService {
         logger.debug("sql finished");
         return listOfpayment;
     }
+
+    public List<catalogueDTO> catalogue() {
+        // Construct the SQL to get all school and course info (sorted by school.id ascending)
+        String sql =
+                "select s.id as schoolID,  s.name as schoolName, c.price as price, \n" +
+                        "       c.name as courseName, c.id as courseID, c.subject as subject\n" +
+                        "from sdb.course c\n" +
+                        "join sdb.school s on s.id = c.schoolID;";
+
+        // Use the rowMapper to convert the results into a list of catalogueDTO objects
+        //      Maps the "as" something to the matching name in the DTO
+        //      Example: maps "c.name as name"(SQL) to the "private String name"(DTO)
+        BeanPropertyRowMapper<catalogueDTO> rowMapper = new BeanPropertyRowMapper<>(catalogueDTO.class);
+
+        // Create a JdbcTemplate object
+        JdbcTemplate jt = new JdbcTemplate(this.dataSource);
+
+        // Get a connection from the connection pool
+        // Run the SQL
+        // Convert the results into a list of catalogueDTO objects
+        // Return the connection to the connection pool
+        List<catalogueDTO> listOfCourses = jt.query(sql, rowMapper);
+        logger.debug("sql finished");
+        return listOfCourses;
+    }
 }
