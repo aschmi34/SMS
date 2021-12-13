@@ -22,16 +22,56 @@ window"></i>
         </a>
       </div>
     </mat-list-item>
-
-    <!-- Test to link to student profile -->
-    <mat-list-item class="navItem" [routerLink]="'page/student-profile'" routerLinkActive="active">
-      <a title="Student Profile">Student Profile</a>
+    <mat-list-item class="navItem" [routerLink]="'m-dash/ClassRoster'" routerLinkActive="active">
+      <a title="Student Profile">Class Roster</a>
       <div fxFlex fxLayoutAlign="end end">
-        <a [routerLink]="'page/student-profile'" target="_blank">
+        <a [routerLink]="'m-dash/ClassRoster'" target="_blank">
           <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
 window"></i>
         </a>
       </div>
     </mat-list-item>
+
+    <mat-list-item class="navItem" [routerLink]="'m-dash/Create'" routerLinkActive="active">
+      <a title="Student Profile">Create</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'m-dash/Create'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="navItem" [routerLink]="'m-dash/Manage'" routerLinkActive="active">
+      <a title="Student Profile">Managee</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'m-dash/Manage'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="navItem" [routerLink]="'m-dash/View'" routerLinkActive="active">
+      <a title="Student Profile">View</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'m-dash/View'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="navItem" [routerLink]="'logout'" routerLinkActive="active">
+      <a title="Student Profile">Log Out</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'Logout'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+
   </mat-nav-list>
 </div>

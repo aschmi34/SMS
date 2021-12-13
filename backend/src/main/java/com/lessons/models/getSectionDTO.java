@@ -1,11 +1,16 @@
 package com.lessons.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class getSectionDTO {
 
-    private String secNo;
+    @Id
     private int id;
+
+    private String secNo;
     private int courseID;
     private int teacherID;
     private int locationID;

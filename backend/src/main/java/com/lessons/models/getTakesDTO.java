@@ -1,7 +1,14 @@
 package com.lessons.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class getTakesDTO {
+
+    @Id
     private int id;
+
     private int studentID;
     private int sectionID;
     private String grade;

@@ -7,6 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Role {
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private int roleId;
