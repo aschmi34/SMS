@@ -35,10 +35,17 @@ import {ErrorInterceptor} from "./errorHandler/error.interceptor";
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
 import {CanDeactivateGuard} from "./guards/can-deactivate.guard";
 import { LoginComponent } from './login/login.component';
-import { StudentProfileComponent } from './student-profile/student-profile.component';
+import { StudentProfileComponent } from './student/student-profile/student-profile.component';
+import { StudentTuitionComponent } from './student/student-tuition/student-tuition.component';
+import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard.component';
+import { StudentClassesComponent} from "./student/student-classes/student-classes.component";
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
+  { path: 'page/student-tuition', component: StudentTuitionComponent},
+  { path: 'page/student-dashboard', component: StudentDashboardComponent},
+  { path: 'page/student-classes', component: StudentClassesComponent},
+  { path: 'page/student-profile', component: StudentProfileComponent},
   { path: 'page/addReport',    component: AddReportComponent },
   { path: 'page/addReport2',    component: AddReport2Component },
   { path: 'page/viewReports',  component: ViewReportsComponent },
@@ -66,7 +73,9 @@ const appRoutes: Routes = [
     ErrorDialogComponent,
     EditReportComponent,
     LoginComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    StudentTuitionComponent,
+    StudentDashboardComponent
   ],
   imports: [
     BrowserModule,
