@@ -51,17 +51,29 @@ import { DViewComponent } from './d-view/d-view.component';
 import { AProfileComponent } from './a-profile/a-profile.component';
 import { AViewBalancesComponent } from './a-view-balances/a-view-balances.component';
 import { AUpdateBalancesComponent } from './a-update-balances/a-update-balances.component';
+import { MClassRosterComponent } from './admin/m-classRoster/m-class-roster.component';
+import {MViewComponent} from "./admin/m-view/m-view.component";
+import {MCreateComponent} from "./admin/m-create/m-create.component";
+import {LogoutComponent} from "./logout/logout/logout.component";
+import { MManageComponent } from './admin/m-manage/m-manage/m-manage.component';
+import { CourseCatalogComponent } from './courseCatalog/course-catalog/course-catalog.component';
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
   { path: 'page/addReport',    component: AddReportComponent },
   { path: 'page/addReport2',    component: AddReport2Component },
   { path: 'page/viewReports',  component: ViewReportsComponent },
+  { path: 'm-dash/classRoster',  component: MClassRosterComponent },
+  { path: 'm-dash/Create',  component: MCreateComponent },
+  { path: 'm-dash/Manage',  component: MManageComponent },
+  { path: 'm-dash/View',  component: MViewComponent },
+  { path: 'courseCatalog',  component: CourseCatalogComponent },
   { path: 'page/editReport/:id', component: EditReportComponent, canDeactivate: [CanDeactivateGuard] },
   { path: 'page/chart1',       component: Chart1Component },
   { path: 'page/chart2',       component: Chart2Component },
   { path: '',                  component: WelcomeComponent},
-  { path: '**',                component: NotFoundComponent}
+  { path: '**',                component: NotFoundComponent},
+  { path: 'logout',                component: LogoutComponent}
 ];
 
 
@@ -96,7 +108,13 @@ const appRoutes: Routes = [
     DViewComponent,
     AProfileComponent,
     AViewBalancesComponent,
-    AUpdateBalancesComponent
+    AUpdateBalancesComponent,
+    MClassRosterComponent,
+    MViewComponent,
+    MCreateComponent,
+    LogoutComponent,
+    MManageComponent,
+    CourseCatalogComponent
   ],
   imports: [
     BrowserModule,
