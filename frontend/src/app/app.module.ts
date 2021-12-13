@@ -35,7 +35,22 @@ import {ErrorInterceptor} from "./errorHandler/error.interceptor";
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
 import {CanDeactivateGuard} from "./guards/can-deactivate.guard";
 import { LoginComponent } from './login/login.component';
-import { StudentProfileComponent } from './student-profile/student-profile.component';
+import { StudentProfileComponent } from './s-profile/student-profile.component';
+import { TProfileComponent } from './t-profile/t-profile.component';
+import { TAnnouncementsComponent } from './t-announcements/t-announcements.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { MProfileComponent } from './m-profile/m-profile.component';
+import { TSectionsComponent } from './t-sections/t-sections.component';
+import { SSectionsComponent } from './s-sections/s-sections.component';
+import { STuitionComponent } from './s-tuition/s-tuition.component';
+import { MEnrollComponent } from './m-enroll/m-enroll.component';
+import { DEnrollComponent } from './d-enroll/d-enroll.component';
+import { DProfileComponent } from './d-profile/d-profile.component';
+import { DCreateComponent } from './d-create/d-create.component';
+import { DViewComponent } from './d-view/d-view.component';
+import { AProfileComponent } from './a-profile/a-profile.component';
+import { AViewBalancesComponent } from './a-view-balances/a-view-balances.component';
+import { AUpdateBalancesComponent } from './a-update-balances/a-update-balances.component';
 
 // Setup the routes.  If no route is found, then take the user to the NotFoundComponent
 const appRoutes: Routes = [
@@ -66,7 +81,22 @@ const appRoutes: Routes = [
     ErrorDialogComponent,
     EditReportComponent,
     LoginComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    TProfileComponent,
+    TAnnouncementsComponent,
+    CatalogueComponent,
+    MProfileComponent,
+    TSectionsComponent,
+    SSectionsComponent,
+    STuitionComponent,
+    MEnrollComponent,
+    DEnrollComponent,
+    DProfileComponent,
+    DCreateComponent,
+    DViewComponent,
+    AProfileComponent,
+    AViewBalancesComponent,
+    AUpdateBalancesComponent
   ],
   imports: [
     BrowserModule,
